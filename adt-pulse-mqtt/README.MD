@@ -1,10 +1,10 @@
 # adt-pulse-mqtt
 ADT Pulse bridge for MQTT. 
 
-This add-on for Hass.io (https://www.home-assistant.io/hassio/) uses MQTT to create a bridge between Home Assistant and ADT Pulse website. It will update the alarm panel status, allow the alarm to be set from Home Assistant, and update the status for each zone. It can also be used as a standalone Docker container without Hass.io.
+This add-on for [Hass.io](https://www.home-assistant.io/hassio/) uses MQTT to create a bridge between Home Assistant and ADT Pulse website. It will update the alarm panel status, allow the alarm to be set from Home Assistant, and update the status for each zone. It can also be used as a standalone Docker container without Hass.io.
 
 An MQTT broker is required and the Mosquitto broker is recommended:
-* Hassio add-on - https://www.home-assistant.io/addons/mosquitto/
+* Hass.io add-on - https://www.home-assistant.io/addons/mosquitto/
 * Standalone Docker container - https://hub.docker.com/_/eclipse-mosquitto
 
 For Smartthings support, see https://github.com/haruny/adt-pulse-mqtt
@@ -80,7 +80,7 @@ In configuration.yaml, add MQTT alarm control panel:
     payload_disarm: "disarm"
 </pre>
 
-Once you've successfully started the add-on and connect to MQTT, list the topics in the zone_state_topic using an app such as as MQTT Snooper for Android (https://play.google.com/store/apps/details?id=mqttsnooper.mqttsnooper) or use mosquitto from the command line:
+Once you've successfully started the add-on and connect to MQTT, list the topics in the zone_state_topic using an app such as as [MQTT Snooper for Android](https://play.google.com/store/apps/details?id=mqttsnooper.mqttsnooper) or use mosquitto from the command line:
 
 <pre>
 # mosquitto_sub -h YOUR_MQTT_IP -v -t "adt/zone/#"

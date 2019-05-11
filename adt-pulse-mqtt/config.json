@@ -51,5 +51,5 @@
       "alarm_command_topic": "str",
       "zone_state_topic": "str"
     },
-    "image": "digitalcraig/adt-pulse-mqtt:latest-{arch}"
+    "image": "digitalcraig/adt-pulse-mqtt-{arch}"
 }

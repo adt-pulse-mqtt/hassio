@@ -1,12 +1,12 @@
 {
   "name": "ADT Pulse MQTT",
-  "version": "0.1",
+  "version": "0.2.2.8",
   "slug": "adt-pulse-mqtt",
-  "description": "ADT Pulse integration with MQTT",
+  "description": "ADT Pulse Bridge using MQTT",
   "url":"https://github.com/digitalcraig/adt-pulse-mqtt",
   "startup": "application",
   "boot": "auto",
-  "host_network" : true,
+  "host_network" : false,
   "arch": [
     "armhf",
     "amd64"
@@ -23,13 +23,15 @@
         "username": "",
         "password": ""
       },
-      "mqtt_host" :  "localhost",
-      "mqtt_connect_options" :  {
+      "mqtt_host" : "core-mosquitto",
+	  "mqtt_url" : "",
+	  "mqtt_connect_options" :  {
         "username" : "",
         "password" : ""
       },
-      "alarm_state_topic" : "home/alarm",
-      "alarm_command_topic" : "home/alarm/set"
+      "alarm_state_topic": "home/alarm/state",
+      "alarm_command_topic": "home/alarm/cmd",
+      "zone_state_topic": "adt/zone"
     },
     "schema": {
       "ssl": "bool",
@@ -39,13 +41,15 @@
         "username": "str",
         "password": "str"
       },
-      "mqtt_host" : "str",
-      "mqtt_connect_options" : {
+       "mqtt_host" : "str",
+	   "mqtt_url" : "str?",
+       "mqtt_connect_options" : {
          "username" : "str",
          "password" : "str"
       },
       "alarm_state_topic" : "str",
-      "alarm_command_topic": "str"
+      "alarm_command_topic": "str",
+      "zone_state_topic": "str"
     },
-    "image": "digitalcraig/adt-pulse-mqtt-{arch}"
+    "image": "digitalcraig/adt-pulse-mqtt:latest-{arch}"
 }

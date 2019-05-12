@@ -2,7 +2,7 @@
   "name": "ADT Pulse MQTT",
   "version": "0.2.2.8",
   "slug": "adt-pulse-mqtt",
-  "description": "ADT Pulse Bridge using MQTT",
+  "description": "This add-on for Hass.io (https://www.home-assistant.io/hassio/) uses MQTT to create a bridge between Home Assistant and ADT Pulse website. It will update the alarm panel status, allow the alarm to be set from Home Assistant, and update the status for each zone.",
   "url":"https://github.com/digitalcraig/adt-pulse-mqtt",
   "startup": "application",
   "boot": "auto",

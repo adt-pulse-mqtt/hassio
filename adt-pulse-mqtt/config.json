@@ -1,8 +1,8 @@
 {
   "name": "ADT Pulse MQTT",
-  "version": "0.2.2.8",
-  "slug": "adt-pulse-mqtt",
-  "description": "This add-on for Hass.io (https://www.home-assistant.io/hassio/) uses MQTT to create a bridge between Home Assistant and ADT Pulse website. It will update the alarm panel status, allow the alarm to be set from Home Assistant, and update the status for each zone.",
+  "version": "2.3.0",
+  "slug": "adtpulsemqtt",
+  "description": "ADT Pulse MQTT is a bridge between the ADT Pulse portal and MQTT topics. These topics can be used with Home Assistant MQTT sensors and alarm panel.",
   "url":"https://github.com/digitalcraig/adt-pulse-mqtt",
   "startup": "application",
   "boot": "auto",
@@ -15,6 +15,7 @@
     "share:rw",
     "ssl"
   ],
+  "image": "digitalcraig/adt-pulse-mqtt-{arch}",
   "options": {
       "ssl": false,
       "certfile": "fullchain.pem",
@@ -31,7 +32,9 @@
       },
       "alarm_state_topic": "home/alarm/state",
       "alarm_command_topic": "home/alarm/cmd",
-      "zone_state_topic": "adt/zone"
+      "zone_state_topic": "adt/zone",
+      "smarthings_topic": "smartthings",
+      "smartthings":"false"
     },
     "schema": {
       "ssl": "bool",
@@ -42,14 +45,15 @@
         "password": "str"
       },
        "mqtt_host" : "str",
-	   "mqtt_url" : "str?",
+	     "mqtt_url" : "str?",
        "mqtt_connect_options" : {
-         "username" : "str",
-         "password" : "str"
+       "username" : "str",
+       "password" : "str"
       },
       "alarm_state_topic" : "str",
       "alarm_command_topic": "str",
-      "zone_state_topic": "str"
-    },
-    "image": "digitalcraig/adt-pulse-mqtt-{arch}"
+      "zone_state_topic": "str",
+      "smarthings_topic": "star",
+      "smartthings": "bool"
+    }
 }

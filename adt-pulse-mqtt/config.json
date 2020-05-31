@@ -53,7 +53,7 @@
       "alarm_state_topic" : "str",
       "alarm_command_topic": "str",
       "zone_state_topic": "str",
-      "smartthings_topic": "star",
+      "smartthings_topic": "str",
       "smartthings": "bool"
     }
 }

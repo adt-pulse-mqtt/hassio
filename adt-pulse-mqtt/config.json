@@ -1,6 +1,6 @@
 {
   "name": "ADT Pulse MQTT",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "slug": "adtpulsemqtt",
   "description": "ADT Pulse MQTT is a bridge between the ADT Pulse portal and MQTT topics. These topics can be used with Home Assistant MQTT sensors and alarm panel.",
   "url":"https://github.com/digitalcraig/adt-pulse-mqtt",

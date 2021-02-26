@@ -1,5 +1,5 @@
 {
-  "name": "Craig's Hassio Add-ons",
-  "url": "https://github.com/digitalcraig/hassio",
-  "maintainer": "Craig Leikis"
+  "name": "ADT Pulse MQTT Repository",
+  "url": "https://github.com/adt-pulse-mqtt/hassio",
+  "maintainer": "ADT Pulse MQTT Team"
 }

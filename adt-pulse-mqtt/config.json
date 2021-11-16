@@ -1,8 +1,8 @@
 {
   "name": "ADT Pulse MQTT",
-  "version": "2.3.5",
+  "version": "2.4.0",
   "slug": "adtpulsemqtt",
-  "description": "ADT Pulse MQTT is a bridge between the ADT Pulse portal and MQTT topics. These topics can be used with Home Assistant MQTT sensors and alarm panel.",
+  "description": "ADT Pulse Bridge using MQTT",
   "url":"https://github.com/adt-pulse-mqtt/adt-pulse-mqtt",
   "startup": "application",
   "boot": "auto",
@@ -22,7 +22,8 @@
       "keyfile": "privkey.pem",
       "pulse_login" : {
         "username": "",
-        "password": ""
+        "password": "",
+        "fingerprint": ""
       },
       "mqtt_host" : "core-mosquitto",
 	  "mqtt_url" : "",
@@ -42,13 +43,14 @@
       "keyfile": "str",
       "pulse_login" : {
         "username": "str",
-        "password": "str"
+        "password": "str",
+        "fingerprint": "str"
       },
        "mqtt_host" : "str",
 	     "mqtt_url" : "str?",
        "mqtt_connect_options" : {
-       "username" : "str",
-       "password" : "str"
+         "username" : "str",
+         "password" : "str"
       },
       "alarm_state_topic" : "str",
       "alarm_command_topic": "str",

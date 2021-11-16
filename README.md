@@ -7,9 +7,9 @@ A repository of Home Assistant Addons by Digitalcraig.
 Adding this add-on repository to Home Assistant instance is easy. Follow [these instructions](https://www.home-assistant.io/hassio/installing_third_party_addons/) and use the following URL:
 
 ```txt
-https://github.com/digitalcraig/hassio
+https://github.com/adt-pulse-mqtt/adt-pulse-mqtt
 ```
 
 ## Add-ons provided by this repository
 
-* [ADT Pulse MQTT Bridge](https://github.com/digitalcraig/adt-pulse-mqtt)
+* [ADT Pulse MQTT Bridge](https://github.com/adt-pulse-mqtt/adt-pulse-mqtt)
